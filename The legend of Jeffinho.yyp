@@ -351,6 +351,14 @@
             }
         },
         {
+            "Key": "c99e7775-07e3-4c61-99c2-d5734d52e921",
+            "Value": {
+                "id": "ed22e517-36c9-46b0-8001-868d77425b82",
+                "resourcePath": "objects\\oNovo\\oNovo.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "cc98d028-7bdd-4680-85f3-c87a7baa481e",
             "Value": {
                 "id": "663d9a1d-add9-4d38-b725-d3983a07f1ba",
