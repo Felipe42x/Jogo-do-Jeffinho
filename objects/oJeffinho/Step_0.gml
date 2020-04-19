@@ -1,6 +1,6 @@
 var esquerda	= keyboard_check(vk_left)	|| keyboard_check(ord("A"));
 var direita		= keyboard_check(vk_right)	|| keyboard_check(ord("D"));
-hsp = direita-esquerda;
+hsp				= direita-esquerda;
 
 if(hsp != 0){
 	image_xscale = hsp;
@@ -38,7 +38,18 @@ if(habilitado){
 	if(keyboard_check_pressed(ord("P"))){
 		instance_create_depth(x+(image_xscale*15),y-32,0,oGiz);
 	}
-
-
 }
 
+if(keyboard_check_pressed(ord("R"))){
+	room_restart();
+}
+
+if(keyboard_check_pressed(vk_tab)){
+	var d = instance_create_depth(x,y-200,depth,oDino);
+	d.image_xscale = 3;
+	d.image_yscale = 3;
+}
+
+if(vida_jeffinho <= 0){
+	room_restart();
+}
