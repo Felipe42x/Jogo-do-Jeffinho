@@ -44,12 +44,6 @@ if(keyboard_check_pressed(ord("R"))){
 	room_restart();
 }
 
-if(keyboard_check_pressed(vk_tab)){
-	var d = instance_create_depth(x,y-200,depth,oDino);
-	d.image_xscale = 3;
-	d.image_yscale = 3;
-}
-
 if(vida_jeffinho <= 0){
 	room_restart();
 }
