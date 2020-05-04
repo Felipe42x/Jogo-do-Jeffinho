@@ -2,6 +2,11 @@ var esquerda	= keyboard_check(vk_left)	|| keyboard_check(ord("A"));
 var direita		= keyboard_check(vk_right)	|| keyboard_check(ord("D"));
 hsp				= direita-esquerda;
 
+if(keyboard_check_pressed(vk_tab)){
+	instance_create_depth(-200,60,depth,oHelicoptero);
+}
+
+
 if(hsp != 0){
 	image_xscale = hsp;
 }
